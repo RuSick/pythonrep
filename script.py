@@ -12,7 +12,8 @@ def fibonacci(n):
         a, b = b, a + b
 
 try:
-    n = int (input ("write n: ") )
+    n = (input ("write n: ") )
+    n = int(n)
 except ValueError:
     print("wrong nubmer")
     n=0
