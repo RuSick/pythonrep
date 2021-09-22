@@ -1,0 +1,17 @@
+alembic==1.7.3
+Flask==0.10.1
+Flask-Migrate==2.5.2
+Flask-SQLAlchemy==2.4.1
+greenlet==1.1.1
+gunicorn==19.4.5
+importlib-resources==5.2.2
+itsdangerous==0.24
+Jinja2==2.8
+Mako==1.1.5
+MarkupSafe==0.23
+psycopg2==2.8.4
+SQLAlchemy==1.4.23
+Werkzeug==0.11.4
+zipp==3.5.0
+PyJWT==1.7.1
+
