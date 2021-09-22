@@ -1,0 +1,11 @@
+.jogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  &__aside {
+    align-self: flex-end;
+    padding-right: 15px;
+  }
+}

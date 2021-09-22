@@ -1,0 +1,29 @@
+.info {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding: 85px;
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #7ed321;
+  }
+
+  &__body {
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.71;
+    margin-top: 15px;
+  }
+
+  &__article {
+    margin-bottom: 30px;
+  }
+}

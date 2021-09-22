@@ -4,7 +4,6 @@ from flask_jwt_extended import create_refresh_token
 from flask_jwt_extended import jwt_required
 from flask_jwt_extended import jwt_refresh_token_required
 from flask_jwt_extended import get_jwt_identity
-from datetime import datetime
 from app import app, db, jwt, flask_bcrypt
 from app.auth.models import Users
 from app.auth.schemas import validate_user, validate_user_login

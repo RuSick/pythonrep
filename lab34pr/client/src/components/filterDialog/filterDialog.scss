@@ -1,0 +1,34 @@
+.filter-dialog {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+
+  &__input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  &__container-input {
+    border-radius: 11px;
+    border: solid 1px #979797;
+    width: 100px;
+    height: 31px;
+
+    @media screen and (max-width: 768px) {
+      width: 70px;
+    }
+  }
+
+  &__container-label {
+    font-family: SFUIText;
+    font-size: 13px;
+    font-weight: normal;
+    margin-right: 15px;
+  }
+}

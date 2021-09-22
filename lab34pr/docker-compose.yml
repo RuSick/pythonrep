@@ -1,0 +1,28 @@
+
+version: "1"
+services:
+  db:
+    image: postgres
+    restart: always
+
+  frontend:
+    image: RuSick/lab_34
+    container_name: frontend
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /home/ubuntu/ssl:/etc/nginx/certs
+
+  backend:
+    image: RuSick/lab_34_be
+    restart: always
+    container_name: backend
+    expose:
+      - 5000
+    volumes:
+      - ./backend:/usr/src/app
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=run.py
+      - FLASK_DEBUG=1

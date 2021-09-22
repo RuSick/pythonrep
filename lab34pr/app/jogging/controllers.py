@@ -80,4 +80,4 @@ def get_user_places():
 #curl -X 'POST' -H "Content-Type: application/json" --data '{"login":"admin1","email":"admin@gmail.com","password":"admin123","role":"admin"}' localhost:8080/register
 
 #insert into users(login, email, password, role) values ('alex', 'sankai1917', '\\here password hash\\', 'admin');
-#insert into joges(name, owner_id, description) values('Sushi', 1, 'asdsadasdasdasd');
+#insert into joges(speed, distance, user_id, time, date) values(15, 5, 1, 4, 'saturday');

@@ -1,0 +1,33 @@
+.jog {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 78px;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 46px;
+    font-family: SFUIText;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__img {
+    cursor: pointer;
+  }
+
+  &__timestamp {
+    color: #808080;
+  }
+
+  &__info-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 9px;
+  }
+
+  &__info-title {
+    margin-right: 5px;
+    font-weight: 600;
+  }
+}
