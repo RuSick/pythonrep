@@ -73,11 +73,3 @@ def get_user_places():
         return jsonify({'ok': True, 'user_jogs': user_jogs_json}), 200
     else:
         return jsonify({'ok': False, 'message': "Cannot find user places"}), 400
-
-# curl  -H 'Content-Type: application/json' --data '{"time":123,"distance":123,"speed":123,"date":"122"}' localhost:8080
-#curl -X 'PUT' -H "Content-Type: application/json" -d '{"time":223,"distance":133,"speed":777,"date":"saturday"}' localhost:8080/1
-#curl -X PUT -H "Content-Type: application/json" -d '{"key1":"value"}' "YOUR_URI"
-#curl -X 'POST' -H "Content-Type: application/json" --data '{"login":"admin1","email":"admin@gmail.com","password":"admin123","role":"admin"}' localhost:8080/register
-
-#insert into users(login, email, password, role) values ('alex', 'sankai1917', '\\here password hash\\', 'admin');
-#insert into joges(speed, distance, user_id, time, date) values(15, 5, 1, 4, 'saturday');
