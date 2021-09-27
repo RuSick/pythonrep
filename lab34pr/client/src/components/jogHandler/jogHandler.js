@@ -8,6 +8,7 @@ import _ from "lodash";
 const JogHandler = (props) => {
   const [isEditMode, setIsEditMode] = useState();
   const [distance, setDistance] = useState(null);
+  const [speed, setSpeed] = useState(null)
   const [time, setTime] = useState(null);
   const [date, setDate] = useState(null);
 
@@ -15,34 +16,26 @@ const JogHandler = (props) => {
     setIsEditMode(!_.isEmpty(props.jog));
     if (!_.isEmpty(props.jog)) {
       setTime(props.jog.time);
+      setSpeed(props.jog.speed);
       setDate(props.jog.date);
       setDistance(props.jog.distance);
     } else {
       setTime(null);
+      setSpeed(null);
       setDate(null);
       setDistance(null);
     }
   }, [props.jog]);
 
   const handleAddJog = () => {
-    if (time !== null && distance !== null && date !== null) {
-      const formData = new FormData();
+    if (time !== null && speed != null && distance !== null && date !== null) {
       const obj = {
         time: parseInt(time),
+        speed: parseInt(speed),
         distance: parseFloat(distance),
         date: date,
       };
-      Object.keys(obj).forEach((key) => {
-        formData.append(key, obj[key]);
-      });
-      if (isEditMode) {
-        formData.append("jog_id", parseInt(props.jog.id));
-        formData.append("user_id", props.user.id);
-        props.onEditJog(formData);
-        console.log(obj);
-        return;
-      }
-      props.onAddJog(formData);
+      props.onAddJog(obj);
     } else alert("Values cant be null");
   };
 
@@ -56,6 +49,14 @@ const JogHandler = (props) => {
               className="jog-handler__form-input"
               onChange={(e) => setDistance(e.target.value)}
               defaultValue={isEditMode ? props.jog.distance : null}
+            />
+          </div>
+          <div className="jog-handler__form">
+            <span className="jog-handler__form-label">Speed</span>
+            <input
+              className="jog-handler__form-input"
+              defaultValue={isEditMode ? props.jog.speed : null}
+              onChange={(e) => setSpeed(e.target.value)}
             />
           </div>
           <div className="jog-handler__form">
@@ -79,7 +80,7 @@ const JogHandler = (props) => {
           <button
             className="jog-handler__save-btn"
             onClick={() => handleAddJog()}
-          >
+            >
             Save
           </button>
         </div>

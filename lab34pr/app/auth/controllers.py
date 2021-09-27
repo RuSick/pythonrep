@@ -52,11 +52,17 @@ def register():
     else:
         return jsonify({'ok': False, 'message': 'Bad request parameters: {}'.format(data['message'])}), 400
 
+@app.route('/api/token', methods=['POST'])
+def get_user_token():
+    token = create_access_token(identity={'id': '1'})
+    return jsonify({'ok': True, 'access_token': token}), 200
+
 @app.route('/user', methods=['GET'])
 @jwt_required
 def get_user_info():
     data = get_jwt_identity()
-    return jsonify(data)
+    return jsonify(data), 200
+
 
 @app.route('/user', methods=['DELETE'])
 @jwt_required

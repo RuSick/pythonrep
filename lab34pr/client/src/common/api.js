@@ -1,6 +1,6 @@
 export const apiModule = {
   getUser: () => {
-    return fetch("https://jogtracker.herokuapp.com/api/v1/auth/user", {
+    return fetch("/user", {
       headers: {
         authorization: `Bearer ${localStorage.getItem("jogging_token")}`,
       },
@@ -9,16 +9,13 @@ export const apiModule = {
   },
 
   authUser: () => {
-    const formData = new FormData();
-    formData.append("uuid", "hello");
-    return fetch("https://jogtracker.herokuapp.com/api/v1/auth/uuidLogin", {
+    return fetch("/api/token", {
       method: "POST",
-      body: formData,
     });
   },
 
   getUserJogs: () => {
-    return fetch("https://jogtracker.herokuapp.com/api/v1/data/sync", {
+    return fetch("/user/jogging", {
       headers: {
         authorization: `Bearer ${localStorage.getItem("jogging_token")}`,
       },
@@ -27,18 +24,20 @@ export const apiModule = {
   },
 
   addJog: (data) => {
-    return fetch("https://jogtracker.herokuapp.com/api/v1/data/jog", {
+    return fetch("/jogging", {
       headers: {
+        "Content-Type": "application/json",
         authorization: `Bearer ${localStorage.getItem("jogging_token")}`,
       },
       method: "POST",
-      body: data,
+      body: JSON.stringify(data),
     });
   },
 
   editJog: (data) => {
-    return fetch("https://jogtracker.herokuapp.com/api/v1/data/jog", {
+    return fetch("/jogging/<jog_id>", {
       headers: {
+        "Content-Type": "application/json",
         authorization: `Bearer ${localStorage.getItem("jogging_token")}`,
       },
       method: "PUT",

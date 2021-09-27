@@ -14,7 +14,7 @@ export const authUser = () => (dispatch) => {
     .authUser()
     .then((res) => res.json())
     .then((res) => {
-      localStorage.setItem("jogging_token", res.response.access_token);
+      localStorage.setItem("jogging_token", res.access_token);
       dispatch({ type: AUTH_USER_SUCCESS });
     })
     .catch((err) => dispatch({ type: AUTH_USER_FAILED }));

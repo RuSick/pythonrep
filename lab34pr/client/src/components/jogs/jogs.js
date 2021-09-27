@@ -55,6 +55,7 @@ const Jogs = (props) => {
           {props.jogs.length &&
             handleJogs().map((jog) => (
               <Jog
+                speed={jog.speed}  
                 time={jog.time}
                 distance={jog.distance}
                 date={jog.date}

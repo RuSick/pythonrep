@@ -21,7 +21,7 @@ export const getUserJogs = () => (dispatch) => {
       } else throw res.error_message;
     })
     .then((res) => {
-      dispatch({ type: GET_USER_JOGS_SUCCESS, payload: res.response.jogs });
+      dispatch({ type: GET_USER_JOGS_SUCCESS, payload: res.user_jogs });
     })
     .catch((err) => {
       dispatch({ type: GET_USER_JOGS_FAILED, payload: err });
@@ -37,7 +37,7 @@ export const addJog = (data) => (dispatch) => {
       else throw res.error_message;
     })
     .then((res) => {
-      dispatch({ type: ADD_JOG_SUCCESS, payload: res.response });
+      dispatch({ type: ADD_JOG_SUCCESS, payload: res.Jog });
     })
     .catch((err) => dispatch({ type: ADD_JOG_FAILED, payload: err }));
 };

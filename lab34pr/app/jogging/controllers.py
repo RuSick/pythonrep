@@ -33,6 +33,7 @@ def get_jog(jog_id):
 def create_jog():
     user=get_jwt_identity()
     data = request.get_json()
+    print(data)
     new_jog = Jogs(time=data['time'], distance=data['distance'], user_id=user['id'], speed=data['speed'], date=data['date'])
     db.session.add(new_jog)
     db.session.commit()
@@ -53,7 +54,7 @@ def delete_jog(jog_id):
 
 @app.route('/jogging/<jog_id>', methods=['PUT'])
 @jwt_required
-def update_place(jog_id):
+def update_jogs(jog_id):
     data = request.get_json()
     jog = Jogs.query.filter_by(id=jog_id).update({"time": data['time'], "distance": data['distance'], "speed": data['speed'], "date": data['date']})
     db.session.commit()
@@ -65,7 +66,8 @@ def update_place(jog_id):
 
 @app.route('/user/jogging', methods=['GET'])
 @jwt_required
-def get_user_places():
+def get_user_jogs():
+    print(get_jwt_identity())
     user_creds_id = get_jwt_identity()['id']
     user_jogs = Jogs.query.filter_by(user_id=user_creds_id).all()
     if user_jogs:
@@ -80,4 +82,4 @@ def get_user_places():
 #curl -X 'POST' -H "Content-Type: application/json" --data '{"login":"admin1","email":"admin@gmail.com","password":"admin123","role":"admin"}' localhost:8080/register
 
 #insert into users(login, email, password, role) values ('alex', 'sankai1917', '\\here password hash\\', 'admin');
-#insert into joges(speed, distance, user_id, time, date) values(15, 5, 1, 4, 'saturday');
+#insert into joges(speed, distance, user_id, time, date) values(15, 5, 1, 4, '22.01.2000');

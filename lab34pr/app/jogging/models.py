@@ -9,7 +9,7 @@ class Jogs(db.Model):
     distance = db.Column(db.Integer, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id', ondelete='CASCADE'), nullable=False)
     time = db.Column(db.Integer, nullable=False)
-    date = db.Column(db.String(255), nullable=False)
+    date = db.Column(db.DateTime, default=db.func.current_date())
 
     def __init__(self, speed, distance, user_id, time, date):
         self.speed = speed
