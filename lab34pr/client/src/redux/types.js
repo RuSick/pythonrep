@@ -7,6 +7,9 @@ export const GET_USER_BY_TOKEN = "GET_USER_BY_TOKEN";
 export const GET_USER_BY_TOKEN_SUCCESS = "GET_USER_BY_TOKEN_SUCCESS";
 export const GET_USER_BY_TOKEN_FAILED = "GET_USER_BY_TOKEN_FAILED";
 
+export const LOGIN_ROUTE = '/login';
+export const REGISTRATION_ROUTE = '/registration';
+export const MAIN_ROUTE = '/';
 // Jog types
 export const ADD_JOG = "ADD_JOG";
 export const ADD_JOG_SUCCESS = "ADD_JOG_SUCCESS";

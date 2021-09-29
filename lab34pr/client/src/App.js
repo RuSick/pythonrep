@@ -4,6 +4,8 @@ import Header from "./components/header/header.container";
 import Info from "./components/info/info";
 import Jogs from "./components/jogs/jogs.container";
 import LetMeIn from "./components/letMeIn/letMeIn.container";
+import Register from "./components/auth/Register";
+import Login from "./components/auth/Login";
 
 const App = (props) => {
   useEffect(() => {
@@ -18,19 +20,22 @@ const App = (props) => {
         {props.isUserAuthorised !== null && !props.isUserAuthorised && (
           <>
             <Route exact path="/">
-              <Redirect to="/auth" />
+              <Redirect to="/login" />
             </Route>
-            <Route path="/auth">
-              <LetMeIn />
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/register">
+              <Register />
             </Route>
             <Route path="/info">
-              <Redirect to="/auth" />
+              <Redirect to="/login" />
             </Route>
           </>
         )}
         {props.isUserAuthorised && (
           <>
-            <Route path="/auth">
+            <Route path="/login">
               <Redirect to="/" />
             </Route>
             <Route exact path="/">

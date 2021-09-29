@@ -41,7 +41,7 @@ export const apiModule = {
         authorization: `Bearer ${localStorage.getItem("jogging_token")}`,
       },
       method: "PUT",
-      body: data,
+      body: JSON.stringify(data),
     });
   },
 };

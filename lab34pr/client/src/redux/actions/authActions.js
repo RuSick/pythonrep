@@ -8,6 +8,11 @@ import {
 } from "../types";
 import { apiModule } from "../../common/api";
 
+import { createAction} from '@reduxjs/toolkit';
+
+export const setIsAuth = createAction(AUTH_USER_SUCCESS);
+export const setUser = createAction('user/user');
+
 export const authUser = () => (dispatch) => {
   dispatch({ type: AUTH_USER });
   apiModule

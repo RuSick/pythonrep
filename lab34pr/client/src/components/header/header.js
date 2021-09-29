@@ -69,6 +69,7 @@ const Header = (props) => {
             {isMobileHeaderOpen && (
               <MobileModal onClose={() => setIsMobileHeaderOpen(false)} />
             )}
+            <span onClick={() => { localStorage.removeItem("jogging_token"); document.location.reload(); }}>Logout</span>
           </div>
         )}
       </div>

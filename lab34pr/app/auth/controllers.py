@@ -6,7 +6,6 @@ from flask_jwt_extended import jwt_refresh_token_required
 from flask_jwt_extended import get_jwt_identity
 from app import app, db, jwt, flask_bcrypt
 from app.auth.models import Users
-from app.auth.schemas import validate_user, validate_user_login
 
 auth = Blueprint('auth', __name__)
 @app.route('/', methods=['GET'])
@@ -20,42 +19,32 @@ def unauthorized_response(callback):
 
 @app.route('/auth', methods=['POST'])
 def auth_user():
-    data = validate_user_login(request.get_json())
-    if data['ok']:
-        data = data['data']
-        user = None
-        user = Users.query.filter_by(login=data['login']).first()
-        if user and flask_bcrypt.check_password_hash(user.password, data['password']):
-            del user.password
-            access_token = create_access_token(identity=user.json())
-            refresh_token = create_refresh_token(identity=user.json()) # Why it set
-            return jsonify({'ok': True, 'access_token': access_token, 'refresh_token': refresh_token, 'user': user.json()}), 200
-        else:
-            return jsonify({'ok': False, 'message': 'Invalid credentials'}), 401
-    else:
-        return jsonify({'ok': False, 'message': 'Bad request parameters: {}'.format(data['message'])}), 400
-
-
-@app.route('/register', methods=['POST'])
-def register():
-    data = validate_user(request.get_json())
-    if data['ok']:
-        data = data['data']
-        data['password'] = flask_bcrypt.generate_password_hash(data['password']).decode('utf-8')
-        user = Users(login=data['login'], email=data['email'], password=data['password'], role=data['role'])
-        db.session.add(user)
-        db.session.commit()
-        print(user.json())
+    data = request.get_json()
+    user = None
+    user = Users.query.filter_by(email=data['login']).first()
+    print(user)
+    if user and flask_bcrypt.check_password_hash(user.password, data['password']):
+        del user.password
         access_token = create_access_token(identity=user.json())
         refresh_token = create_refresh_token(identity=user.json()) # Why it set
         return jsonify({'ok': True, 'access_token': access_token, 'refresh_token': refresh_token, 'user': user.json()}), 200
     else:
-        return jsonify({'ok': False, 'message': 'Bad request parameters: {}'.format(data['message'])}), 400
+        return jsonify({'ok': False, 'message': 'Invalid credentials'}), 401
 
-@app.route('/api/token', methods=['POST'])
-def get_user_token():
-    token = create_access_token(identity={'id': '1'})
-    return jsonify({'ok': True, 'access_token': token}), 200
+
+@app.route('/register', methods=['POST'])
+def register():
+    data = request.get_json()
+    print(data)
+    data['password'] = flask_bcrypt.generate_password_hash(data['password']).decode('utf-8')
+    user = Users(login=data['login'], email=data['email'], password=data['password'], role=data['role'])
+    db.session.add(user)
+    db.session.commit()
+    print(user.json())
+    access_token = create_access_token(identity=user.json())
+    refresh_token = create_refresh_token(identity=user.json()) # Why it set
+    return jsonify({'ok': True, 'access_token': access_token, 'refresh_token': refresh_token, 'user': user.json()}), 200
+
 
 @app.route('/user', methods=['GET'])
 @jwt_required
