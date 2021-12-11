@@ -1,7 +1,9 @@
-for installing 
+for installing:
+
 $ pip install .
 
-for coverage check
+for coverage check:
+
 $ coverage run -m unittest discover
 $ coverage report -m
 
