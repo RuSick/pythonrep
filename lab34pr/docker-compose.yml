@@ -18,6 +18,8 @@ services:
       - POSTGRES_USER=ruslan
       - POSTGRES_PASSWORD=Ruslan1649757
       - POSTGRES_DB=lab3
+    volumes:
+      - postgres
   frontend:
     container_name: frontend
     build:
@@ -28,3 +30,6 @@ services:
       - 443:443
     volumes:
       - /home/ubuntu/ssl:/etc/nginx/certs
+    depends_on:
+      - backend
+      - db
