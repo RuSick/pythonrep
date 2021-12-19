@@ -1,0 +1,367 @@
+INFO: * Running on http://localhost:8080/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 603-418-896
+INFO:127.0.0.1 - - [29/Sep/2021 14:23:42] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:User connected
+INFO:127.0.0.1 - - [29/Sep/2021 14:23:46] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [29/Sep/2021 14:23:46] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [29/Sep/2021 14:23:49] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO: * Running on http://localhost:8080/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 603-418-896
+INFO:User connected
+INFO:127.0.0.1 - - [29/Sep/2021 14:46:39] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [29/Sep/2021 14:46:40] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [29/Sep/2021 14:46:43] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO: * Running on http://localhost:8080/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 140-999-736
+INFO:127.0.0.1 - - [30/Sep/2021 16:00:18] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:User connected
+INFO:127.0.0.1 - - [30/Sep/2021 16:00:21] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [30/Sep/2021 16:00:21] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [30/Sep/2021 16:00:24] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:User connected
+INFO:127.0.0.1 - - [30/Sep/2021 16:10:08] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [30/Sep/2021 16:10:08] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [30/Sep/2021 16:10:15] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:127.0.0.1 - - [30/Sep/2021 16:14:07] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [30/Sep/2021 16:14:07] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [30/Sep/2021 16:14:07] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:User connected
+INFO:127.0.0.1 - - [30/Sep/2021 16:15:22] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [30/Sep/2021 16:15:22] "GET /user/jogging HTTP/1.1" 200 -
+INFO:Jog 11 created
+INFO:127.0.0.1 - - [30/Sep/2021 16:15:36] "POST /jogging HTTP/1.1" 200 -
+INFO: * Running on http://localhost:8080/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 885-517-818
+INFO:Register user - 6
+INFO:127.0.0.1 - - [17/Dec/2021 15:54:48] "POST /register HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [17/Dec/2021 15:54:48] "[31m[1mGET /user/jogging HTTP/1.1[0m" 400 -
+INFO:127.0.0.1 - - [17/Dec/2021 15:54:54] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:127.0.0.1 - - [17/Dec/2021 15:54:59] "[31m[1mPOST /auth HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [17/Dec/2021 15:55:02] "[31m[1mPOST /auth HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [17/Dec/2021 15:55:05] "[31m[1mPOST /auth HTTP/1.1[0m" 401 -
+INFO:User connected
+INFO:127.0.0.1 - - [17/Dec/2021 15:55:35] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [17/Dec/2021 15:55:35] "[31m[1mGET /user/jogging HTTP/1.1[0m" 400 -
+INFO:127.0.0.1 - - [17/Dec/2021 15:55:40] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO: * Detected change in '/home/ruslan/pythonrep/lab34pr/app/auth/controllers.py', reloading
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 885-517-818
+INFO:127.0.0.1 - - [17/Dec/2021 16:00:15] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:User connected
+INFO:127.0.0.1 - - [17/Dec/2021 16:00:21] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:00:21] "[31m[1mGET /user/jogging HTTP/1.1[0m" 400 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:00:31] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:01:41] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:01:51] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:01:58] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:03:14] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:03:14] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:03:48] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:06:16] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:06:16] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:06:31] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:06:31] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:08:50] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:08:50] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:08:50] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:08:50] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:08:50] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:08:50] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [17/Dec/2021 16:09:48] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO: * Running on http://localhost:8080/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 885-517-818
+INFO:User connected
+INFO:127.0.0.1 - - [17/Dec/2021 22:53:35] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [17/Dec/2021 22:53:35] "[31m[1mGET /user/jogging HTTP/1.1[0m" 400 -
+INFO:Jog 12 created
+INFO:127.0.0.1 - - [17/Dec/2021 22:53:57] "POST /jogging HTTP/1.1" 200 -
+INFO: * Detected change in '/home/ruslan/pythonrep/lab34pr/backend/venv/lib/python3.8/site-packages/sqlalchemy/ext/mypy/plugin.py', reloading
+INFO: * Restarting with stat
+INFO: * Running on http://localhost:8080/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 935-218-244
+INFO: * Running on http://localhost:8080/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 935-218-244
+INFO:127.0.0.1 - - [18/Dec/2021 00:39:33] "[31m[1mGET /user HTTP/1.1[0m" 401 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 00:39:52] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 00:39:53] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 00:39:57] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 00:40:43] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 00:40:43] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 00:47:02] "GET /user HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 00:47:02] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:05:22] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:05:53] "[31m[1mPOST /jogging HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:05:56] "[31m[1mGET /user HTTP/1.1[0m" 401 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 01:05:59] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:05:59] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:06:00] "GET /user HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:06:00] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:06:02] "GET /user HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:06:02] "GET /user/jogging HTTP/1.1" 200 -
+INFO:Jog 13 created
+INFO:127.0.0.1 - - [18/Dec/2021 01:07:11] "POST /jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:08:13] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:08:17] "GET /user HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:08:17] "GET /user/jogging HTTP/1.1" 200 -
+INFO:Jog 14 created
+INFO:127.0.0.1 - - [18/Dec/2021 01:10:51] "POST /jogging HTTP/1.1" 200 -
+INFO:Jog 15 created
+INFO:127.0.0.1 - - [18/Dec/2021 01:12:01] "POST /jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:19:05] "GET /user HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:19:06] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:19:31] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:20:13] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:21:21] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:21:24] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:21:27] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:21:35] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 01:27:06] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:27:06] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:31:56] "GET /user HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 01:31:56] "GET /user/jogging HTTP/1.1" 200 -
+INFO:Jog 16 created
+INFO:127.0.0.1 - - [18/Dec/2021 01:32:03] "POST /jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:00:30] "[31m[1mPOST /jogging HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:00:36] "[31m[1mGET /user HTTP/1.1[0m" 401 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 02:00:46] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:00:46] "GET /user/jogging HTTP/1.1" 200 -
+INFO:Jog 17 created
+INFO:127.0.0.1 - - [18/Dec/2021 02:00:52] "POST /jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:00:55] "GET /user HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:00:55] "GET /user/jogging HTTP/1.1" 200 -
+INFO:Jog 18 created
+INFO:127.0.0.1 - - [18/Dec/2021 02:04:16] "POST /jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:06:07] "[35m[1mPUT /jogging/:id HTTP/1.1[0m" 500 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:06:10] "GET /user HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:06:10] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:08:28] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:18:43] "[31m[1mPUT /jogging/:jog_id HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:19:45] "[31m[1mGET /user HTTP/1.1[0m" 401 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 02:19:49] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:19:49] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:20:15] "[35m[1mPUT /jogging/:jog_id HTTP/1.1[0m" 500 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:21:36] "[35m[1mPUT /jogging/%3Cjog_id%3E HTTP/1.1[0m" 500 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:24:29] "[35m[1mPUT /jogging/%7Bjog_id%7D HTTP/1.1[0m" 500 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:32:50] "[35m[1mPUT /jogging/undefined HTTP/1.1[0m" 500 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:33:25] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:33:32] "GET /user HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:33:32] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:35:47] "[31m[1mGET /user HTTP/1.1[0m" 401 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 02:35:51] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:35:51] "GET /user/jogging HTTP/1.1" 200 -
+INFO:Jog 1 updated
+INFO:127.0.0.1 - - [18/Dec/2021 02:36:00] "PUT /jogging/1 HTTP/1.1" 200 -
+INFO:Jog 1 updated
+INFO:127.0.0.1 - - [18/Dec/2021 02:36:32] "PUT /jogging/1 HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:38:53] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:38:53] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:38:53] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:38:53] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:41:33] "GET /user HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:41:33] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 02:41:48] "[35m[1mPUT /jogging/undefined HTTP/1.1[0m" 500 -
+INFO: * Running on http://localhost:8080/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 935-218-244
+INFO:127.0.0.1 - - [18/Dec/2021 17:12:15] "[31m[1mGET /user HTTP/1.1[0m" 401 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 17:12:21] "POST /auth HTTP/1.1" 200 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 17:12:21] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 17:12:21] "GET /user/jogging HTTP/1.1" 200 -
+INFO: * Detected change in '/home/ruslan/pythonrep/lab34pr/backend/app.py', reloading
+INFO: * Restarting with stat
+INFO: * Running on http://localhost:8080/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 935-218-244
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 18:54:10] "POST /auth HTTP/1.1" 200 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 18:54:10] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 18:54:10] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 18:55:46] "[35m[1mPUT /jogging/undefined HTTP/1.1[0m" 500 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:22:29] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:22:44] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 19:24:38] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:24:38] "GET /user/jogging HTTP/1.1" 200 -
+INFO:Jog 18 updated
+INFO:127.0.0.1 - - [18/Dec/2021 19:24:46] "PUT /jogging/18 HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:28:21] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:Jog 18 updated
+INFO:127.0.0.1 - - [18/Dec/2021 19:28:27] "PUT /jogging/18 HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:31:27] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 19:31:38] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:31:38] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:32:18] "[35m[1mPUT /jogging/NaN HTTP/1.1[0m" 500 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 19:33:06] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:33:06] "GET /user/jogging HTTP/1.1" 200 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 19:37:57] "POST /auth HTTP/1.1" 200 -
+INFO:Jog 18 updated
+INFO:127.0.0.1 - - [18/Dec/2021 19:38:11] "PUT /jogging/18 HTTP/1.1" 200 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 19:38:40] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:38:40] "GET /user/jogging HTTP/1.1" 200 -
+INFO:Jog 18 updated
+INFO:127.0.0.1 - - [18/Dec/2021 19:41:15] "PUT /jogging/18 HTTP/1.1" 200 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 19:41:36] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:41:37] "GET /user/jogging HTTP/1.1" 200 -
+INFO:Jog 18 updated
+INFO:127.0.0.1 - - [18/Dec/2021 19:42:43] "PUT /jogging/18 HTTP/1.1" 200 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 19:42:53] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:42:53] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:44:13] "[35m[1mPUT /jogging/undefined HTTP/1.1[0m" 500 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:44:24] "[35m[1mPUT /jogging/undefined HTTP/1.1[0m" 500 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 19:44:31] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:44:31] "GET /user/jogging HTTP/1.1" 200 -
+INFO:Jog 17 updated
+INFO:127.0.0.1 - - [18/Dec/2021 19:44:49] "PUT /jogging/17 HTTP/1.1" 200 -
+INFO:User connected
+INFO:127.0.0.1 - - [18/Dec/2021 19:45:00] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [18/Dec/2021 19:45:00] "GET /user/jogging HTTP/1.1" 200 -
+INFO:Jog 19 created
+INFO:127.0.0.1 - - [18/Dec/2021 19:47:08] "POST /jogging HTTP/1.1" 200 -
+INFO: * Running on http://localhost:8080/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 935-218-244
+INFO:127.0.0.1 - - [18/Dec/2021 21:00:03] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:00:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO: * Detected change in '/home/ruslan/pythonrep/lab34pr/backend/app.py', reloading
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 935-218-244
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://192.168.100.7:8080/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 935-218-244
+INFO:127.0.0.1 - - [18/Dec/2021 21:00:49] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:00:49] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:00:50] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:00:50] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:00:50] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:00:51] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:01:03] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:01:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:01:09] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO: * Detected change in '/home/ruslan/pythonrep/lab34pr/backend/app.py', reloading
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 935-218-244
+INFO:127.0.0.1 - - [18/Dec/2021 21:02:02] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO: * Detected change in '/home/ruslan/pythonrep/lab34pr/backend/app.py', reloading
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 935-218-244
+INFO: * Detected change in '/home/ruslan/pythonrep/lab34pr/backend/app.py', reloading
+INFO: * Restarting with stat
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://192.168.100.7:8060/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 935-218-244
+INFO:127.0.0.1 - - [18/Dec/2021 21:02:37] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:02:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO: * Detected change in '/home/ruslan/pythonrep/lab34pr/backend/app.py', reloading
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 935-218-244
+INFO:127.0.0.1 - - [18/Dec/2021 21:02:45] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:02:46] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:02:47] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:02:47] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:02:47] "[31m[1mGET / HTTP/1.1[0m" 401 -
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://192.168.100.7:8080/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 935-218-244
+INFO:127.0.0.1 - - [18/Dec/2021 21:03:09] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO: * Detected change in '/home/ruslan/pythonrep/lab34pr/backend/app.py', reloading
+INFO: * Restarting with stat
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://192.168.100.7:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 935-218-244
+INFO:127.0.0.1 - - [18/Dec/2021 21:04:01] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:127.0.0.1 - - [18/Dec/2021 21:04:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://172.17.0.2:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 114-661-973
+INFO:172.17.0.1 - - [18/Dec/2021 18:21:39] "[31m[1mGET / HTTP/1.1[0m" 401 -
+INFO:172.17.0.1 - - [18/Dec/2021 18:21:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO: * Detected change in '/backend/app/auth/controllers.py', reloading
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 114-661-973
+INFO:172.17.0.1 - - [18/Dec/2021 18:22:21] "[31m[1mGET / HTTP/1.1[0m" 401 -
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://172.17.0.2:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 748-784-260
+INFO:172.17.0.1 - - [18/Dec/2021 18:23:51] "[31m[1mGET / HTTP/1.1[0m" 401 -
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://172.17.0.3:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 535-527-651
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://172.19.0.4:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 113-819-250
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://172.20.0.4:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 857-362-799
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://172.21.0.4:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 764-656-133
