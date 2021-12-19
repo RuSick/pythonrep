@@ -43,9 +43,10 @@ export const addJog = (data) => (dispatch) => {
 };
 
 export const editJog = (data) => (dispatch) => {
+  console.log(data)
   dispatch({ type: EDIT_JOG });
   apiModule
-    .addJog(data)
+    .editJog(data)
     .then((res) => {
       if (res.ok) return res.json();
       else throw res.error_message;

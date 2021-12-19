@@ -18,11 +18,11 @@ const Jog = (props) => {
         </span>
         <span className="jog__info-box">
           <span className="jog__info-title">Speed:</span>
-          <span className="jog__info-subtitle">{props.speed} m/km</span>
+          <span className="jog__info-subtitle">{props.speed} m/min</span>
         </span>
         <span className="jog__info-box">
           <span className="jog__info-title">Distance:</span>
-          <span className="jog__info-subtitle">{props.distance} km</span>
+          <span className="jog__info-subtitle">{props.distance} m</span>
         </span>
         <span className="jog__info-box">
           <span className="jog__info-title">Time:</span>

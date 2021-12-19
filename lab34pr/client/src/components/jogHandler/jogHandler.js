@@ -11,6 +11,8 @@ const JogHandler = (props) => {
   const [speed, setSpeed] = useState(null)
   const [time, setTime] = useState(null);
   const [date, setDate] = useState(null);
+  const [id, setId] = useState(null);
+  
 
   useEffect(() => {
     setIsEditMode(!_.isEmpty(props.jog));
@@ -19,23 +21,38 @@ const JogHandler = (props) => {
       setSpeed(props.jog.speed);
       setDate(props.jog.date);
       setDistance(props.jog.distance);
+      setId(props.jog.id);
     } else {
       setTime(null);
       setSpeed(null);
       setDate(null);
       setDistance(null);
+      setId(null);
     }
   }, [props.jog]);
 
   const handleAddJog = () => {
-    if (time !== null && speed != null && distance !== null && date !== null) {
+    if (time !== null && distance !== null && date !== null) {
       const obj = {
         time: parseInt(time),
-        speed: parseInt(speed),
+        speed: parseInt(distance/time),
         distance: parseFloat(distance),
         date: date,
+        id: id,
       };
       props.onAddJog(obj);
+    } else alert("Values cant be null");
+  };
+  const handleEditJog = () => {
+    if (time !== null && distance !== null && date !== null) {
+      const obj = {
+        time: parseInt(time),
+        speed: parseInt(distance / time),
+        distance: parseFloat(distance),
+        date: date,
+        id: id,
+      };
+      props.onEditJog(obj);
     } else alert("Values cant be null");
   };
 
@@ -49,14 +66,6 @@ const JogHandler = (props) => {
               className="jog-handler__form-input"
               onChange={(e) => setDistance(e.target.value)}
               defaultValue={isEditMode ? props.jog.distance : null}
-            />
-          </div>
-          <div className="jog-handler__form">
-            <span className="jog-handler__form-label">Speed</span>
-            <input
-              className="jog-handler__form-input"
-              defaultValue={isEditMode ? props.jog.speed : null}
-              onChange={(e) => setSpeed(e.target.value)}
             />
           </div>
           <div className="jog-handler__form">

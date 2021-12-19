@@ -1,6 +1,6 @@
 export const apiModule = {
   getUser: () => {
-    return fetch("/user", {
+    return fetch("http://link-name:5000/user", {
       headers: {
         authorization: `Bearer ${localStorage.getItem("jogging_token")}`,
       },
@@ -35,7 +35,7 @@ export const apiModule = {
   },
 
   editJog: (data) => {
-    return fetch("/jogging/<jog_id>", {
+    return fetch("/jogging/" + data.id, {
       headers: {
         "Content-Type": "application/json",
         authorization: `Bearer ${localStorage.getItem("jogging_token")}`,
