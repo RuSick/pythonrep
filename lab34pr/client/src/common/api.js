@@ -1,6 +1,6 @@
 export const apiModule = {
   getUser: () => {
-    return fetch("http://link-name:5000/user", {
+    return fetch("/user", {
       headers: {
         authorization: `Bearer ${localStorage.getItem("jogging_token")}`,
       },

@@ -4,6 +4,7 @@ services:
     restart: always
     build: ./backend
     container_name: backend
+    image: rusick/backend
     environment:
       - DATABASE_URL=postgresql://ruslan:Ruslan1649757@db:5432/lab3 # путь до бд, см. db service
     volumes:
@@ -22,6 +23,7 @@ services:
       - postgres
   frontend:
     container_name: frontend
+    image: rusick/frontend
     build:
       context: ./client
       dockerfile: Dockerfile

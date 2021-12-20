@@ -52,7 +52,7 @@ def delete_jog(jog_id):
         logging.info("Jog {} deleted".format(jog_id))
         return jsonify({'ok': True, "message": "Jog has been deleted successfully"}), 200
     else:
-        return jsonify({"ok": False, "message": "No places with such id"}), 400
+        return jsonify({"ok": False, "message": "No jogs with such id"}), 400
 
 
 @app.route('/jogging/<jog_id>', methods=['PUT'])

@@ -365,3 +365,98 @@ INFO: * Running on http://172.21.0.4:5000/ (Press CTRL+C to quit)
 INFO: * Restarting with stat
 WARNING: * Debugger is active!
 INFO: * Debugger PIN: 764-656-133
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://172.22.0.3:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 230-008-619
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://172.23.0.3:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 108-395-459
+INFO:172.23.0.4 - - [19/Dec/2021 04:37:14] "[31m[1mGET / HTTP/1.0[0m" 401 -
+INFO:172.23.0.4 - - [19/Dec/2021 04:37:30] "[31m[1mGET / HTTP/1.0[0m" 401 -
+INFO:172.23.0.4 - - [19/Dec/2021 04:41:46] "[31m[1mGET / HTTP/1.0[0m" 401 -
+INFO:172.23.0.4 - - [19/Dec/2021 04:41:47] "[31m[1mGET / HTTP/1.0[0m" 401 -
+INFO:172.23.0.4 - - [19/Dec/2021 04:41:54] "[33mGET /login HTTP/1.0[0m" 404 -
+INFO:172.23.0.4 - - [19/Dec/2021 04:42:00] "[31m[1mGET / HTTP/1.0[0m" 401 -
+INFO:172.23.0.4 - - [19/Dec/2021 04:43:10] "[31m[1mGET / HTTP/1.0[0m" 401 -
+INFO: * Detected change in '/backend/app/jogging/controllers.py', reloading
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 108-395-459
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://172.19.0.3:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 676-112-467
+INFO:172.19.0.4 - - [19/Dec/2021 21:15:35] "[31m[1mGET / HTTP/1.0[0m" 401 -
+INFO:172.19.0.4 - - [19/Dec/2021 21:15:35] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+INFO:172.19.0.4 - - [19/Dec/2021 21:15:40] "[33mGET /login HTTP/1.0[0m" 404 -
+INFO:172.19.0.4 - - [19/Dec/2021 21:15:46] "[31m[1mGET / HTTP/1.0[0m" 401 -
+INFO:172.19.0.4 - - [19/Dec/2021 21:16:17] "[31m[1mGET /auth HTTP/1.0[0m" 405 -
+INFO:172.19.0.4 - - [19/Dec/2021 21:16:26] "[33mGET /authf HTTP/1.0[0m" 404 -
+INFO:172.19.0.4 - - [19/Dec/2021 21:16:34] "[31m[1mGET /auth HTTP/1.0[0m" 405 -
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://192.168.100.7:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 435-762-030
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://192.168.100.7:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 435-762-030
+INFO: * Running on http://localhost:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 435-762-030
+INFO: * Running on http://localhost:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 435-762-030
+INFO: * Detected change in '/home/ruslan/pythonrep/lab34pr/backend/app.py', reloading
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 435-762-030
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://192.168.100.7:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 435-762-030
+INFO:127.0.0.1 - - [20/Dec/2021 03:42:24] "[31m[1mGET /user HTTP/1.1[0m" 401 -
+INFO:User connected
+INFO:127.0.0.1 - - [20/Dec/2021 03:42:35] "POST /auth HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [20/Dec/2021 03:42:35] "GET /user/jogging HTTP/1.1" 200 -
+INFO:127.0.0.1 - - [20/Dec/2021 03:43:28] "[31m[1mGET /user HTTP/1.1[0m" 422 -
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://172.20.0.3:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 881-884-587
+INFO:172.20.0.4 - - [20/Dec/2021 00:51:08] "[31m[1mGET / HTTP/1.0[0m" 401 -
+INFO:172.20.0.4 - - [20/Dec/2021 00:51:14] "[33mGET /login HTTP/1.0[0m" 404 -
+INFO:172.20.0.4 - - [20/Dec/2021 00:51:18] "[31m[1mGET / HTTP/1.0[0m" 401 -
+INFO:172.20.0.4 - - [20/Dec/2021 00:52:53] "[33mGET /login HTTP/1.0[0m" 404 -
+INFO:172.20.0.4 - - [20/Dec/2021 00:53:02] "[31m[1mGET /auth HTTP/1.0[0m" 405 -
+INFO:172.20.0.4 - - [20/Dec/2021 00:54:14] "[31m[1mGET / HTTP/1.0[0m" 401 -
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://172.21.0.3:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 102-129-934
+WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO: * Running on http://172.22.0.3:5000/ (Press CTRL+C to quit)
+INFO: * Restarting with stat
+WARNING: * Debugger is active!
+INFO: * Debugger PIN: 124-575-927
