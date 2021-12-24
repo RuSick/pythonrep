@@ -8,7 +8,7 @@ export const registration = async (
     name,
     role
     ) => {
-    const {data} = await axios.post('/register', {
+    const {data} = await axios.post('/api/register', {
         email,
         password,
         login:name,
@@ -19,7 +19,7 @@ export const registration = async (
 }
 
 export const login = async (contractNumber, password) => {
-    const {data} = await axios.post('/auth', {login:contractNumber, password});
+    const {data} = await axios.post('/api/auth', {login:contractNumber, password});
     localStorage.setItem('jogging_token', data.access_token);
     return jwt_decode(data.access_token);
 }

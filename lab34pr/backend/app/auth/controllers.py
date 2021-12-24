@@ -9,7 +9,7 @@ from app.auth.models import Users
 import logging
 
 auth = Blueprint('auth', __name__)
-@auth.route('/', methods=['GET'])
+@auth.route('/api/backtest', methods=['GET'])
 def index():
     return jsonify({'ok': True, 'message': 'pong!'}), 401
 
@@ -18,7 +18,7 @@ def index():
 def unauthorized_response(callback):
     return jsonify({ 'ok': False, 'message': 'Missing authorization header' }), 401
 
-@auth.route('/auth', methods=['POST'])
+@auth.route('/api/auth', methods=['POST'])
 def auth_user():
     data = request.get_json()
     user = None
@@ -34,7 +34,7 @@ def auth_user():
         return jsonify({'ok': False, 'message': 'Invalid credentials'}), 401
 
 
-@auth.route('/register', methods=['POST'])
+@auth.route('/api/register', methods=['POST'])
 def register():
     data = request.get_json()
     data['password'] = flask_bcrypt.generate_password_hash(data['password']).decode('utf-8')
@@ -48,14 +48,14 @@ def register():
     return jsonify({'ok': True, 'access_token': access_token, 'refresh_token': refresh_token, 'user': user.json()}), 200
 
 
-@auth.route('/user', methods=['GET'])
+@auth.route('/api/user', methods=['GET'])
 @jwt_required
 def get_user_info():
     data = get_jwt_identity()
     return jsonify(data), 200
 
 
-@auth.route('/user', methods=['DELETE'])
+@auth.route('/api/user', methods=['DELETE'])
 @jwt_required
 def delete_user(user_id):
     credentials = get_jwt_identity()
@@ -68,7 +68,7 @@ def delete_user(user_id):
     else:
         return jsonify({'ok': False, 'message': 'User doesnt exist, try again with authropriate id'}), 400
 
-@auth.route('/refresh', methods=['POST'])
+@auth.route('/api/refresh', methods=['POST'])
 @jwt_refresh_token_required
 def refresh():
     current_user = get_jwt_identity()

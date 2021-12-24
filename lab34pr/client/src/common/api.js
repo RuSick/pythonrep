@@ -1,6 +1,6 @@
 export const apiModule = {
   getUser: () => {
-    return fetch("/user", {
+    return fetch("/api/user", {
       headers: {
         authorization: `Bearer ${localStorage.getItem("jogging_token")}`,
       },
@@ -15,7 +15,7 @@ export const apiModule = {
   },
 
   getUserJogs: () => {
-    return fetch("/user/jogging", {
+    return fetch("/api/user/jogging", {
       headers: {
         authorization: `Bearer ${localStorage.getItem("jogging_token")}`,
       },
@@ -24,7 +24,7 @@ export const apiModule = {
   },
 
   addJog: (data) => {
-    return fetch("/jogging", {
+    return fetch("/api/jogging", {
       headers: {
         "Content-Type": "application/json",
         authorization: `Bearer ${localStorage.getItem("jogging_token")}`,
@@ -35,7 +35,7 @@ export const apiModule = {
   },
 
   editJog: (data) => {
-    return fetch("/jogging/" + data.id, {
+    return fetch("/api/jogging/" + data.id, {
       headers: {
         "Content-Type": "application/json",
         authorization: `Bearer ${localStorage.getItem("jogging_token")}`,

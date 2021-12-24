@@ -13,14 +13,14 @@ def unauthorized_response(callback):
     return jsonify({ 'ok': False, 'message': 'Missing authorization header' }), 401
 
 
-@app.route('/jogging', methods=['GET'])
+@app.route('/api/jogging', methods=['GET'])
 @jwt_required
 def get_all_joges():
     jogs = Jogs.query.all()
     jogs_json = list(map(lambda jogs: jogs.json(), jogs))
     return jsonify({'ok': True, 'jogs': jogs_json}), 200
 
-@app.route('/jogging/<jog_id>', methods=['GET'])
+@app.route('/api/jogging/<jog_id>', methods=['GET'])
 @jwt_required
 def get_jog(jog_id):
     jog_to_return = Jogs.query.filter_by(id=jog_id).first()
@@ -29,7 +29,7 @@ def get_jog(jog_id):
     else:
         return jsonify({"ok": False, "message": "No jogs with such id"}), 400
 
-@app.route('/jogging', methods=['POST'])
+@app.route('/api/jogging', methods=['POST'])
 @jwt_required
 def create_jog():
     user=get_jwt_identity()
@@ -42,7 +42,7 @@ def create_jog():
     return jsonify({'ok': True, "Jog": new_jog.json()})
 
 
-@app.route('/jogging/<jog_id>', methods=['DELETE'])
+@app.route('/api/jogging/<jog_id>', methods=['DELETE'])
 @jwt_required
 def delete_jog(jog_id):
     jog_to_delete = Jogs.query.filter_by(id=jog_id).first()
@@ -55,7 +55,7 @@ def delete_jog(jog_id):
         return jsonify({"ok": False, "message": "No jogs with such id"}), 400
 
 
-@app.route('/jogging/<jog_id>', methods=['PUT'])
+@app.route('/api/jogging/<jog_id>', methods=['PUT'])
 @jwt_required
 def update_jogs(jog_id):
     data = request.get_json()
@@ -68,7 +68,7 @@ def update_jogs(jog_id):
     else:
         return jsonify({'ok': False, 'message': 'No joges to update'}), 404
 
-@app.route('/user/jogging', methods=['GET'])
+@app.route('/api/user/jogging', methods=['GET'])
 @jwt_required
 def get_user_jogs():
     print(get_jwt_identity())
